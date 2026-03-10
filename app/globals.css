@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-accent: #1e3a5f;
+  --color-accent-light: #2a5a8f;
+  --color-accent-dark: #152a45;
+  --color-muted: #475569;
+  --color-border: #e2e8f0;
+  --color-surface: #f8fafc;
+  --color-surface-alt: #f1f5f9;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Subtle dot grid for hero backgrounds */
+.bg-grid {
+  background-image: radial-gradient(circle, #cbd5e1 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
