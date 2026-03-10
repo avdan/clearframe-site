@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { MapPin, Globe } from "lucide-react";
 import { FadeIn } from "@/components/animate";
 import ContactForm from "./contact-form";
 
@@ -48,25 +48,6 @@ export default function ContactPage() {
             {/* Contact details */}
             <FadeIn delay={0.2}>
               <div className="space-y-6">
-                <div className="rounded-xl border border-border p-6 shadow-sm transition-all hover:border-accent/20 hover:shadow-md">
-                  <div className="flex gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                      <Mail className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                        Email
-                      </p>
-                      <a
-                        href="mailto:hello@clearframe-group.com"
-                        className="mt-1 block text-sm text-foreground transition-colors hover:text-accent"
-                      >
-                        hello@clearframe-group.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="rounded-xl border border-border p-6 shadow-sm transition-all hover:border-accent/20 hover:shadow-md">
                   <div className="flex gap-4">
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
